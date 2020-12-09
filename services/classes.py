@@ -1,0 +1,1 @@
+CLASS_MONK = "monk"
