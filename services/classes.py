@@ -1,1 +1,7 @@
 CLASS_MONK = "monk"
+CLASS_WIZARD = "wizard"
+CLASS_CRUSADER = "crusader"
+CLASS_DEMON_HUNTER = "demon hunter"
+CLASS_WITCH_DOCTOR = "witch doctor"
+CLASS_BARBARIAN = "barbarian"
+CLASS_NECROMANCER = "necromancer"

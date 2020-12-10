@@ -3,8 +3,8 @@ import win32con
 import win32gui
 import pygame as pg
 from services.buffs.coe import BuffCoe
+import sys
 from helpers.surface import create_wrapper
-
 
 class App:
     def __init__(self, playing_as, text_background_color):
@@ -41,6 +41,8 @@ class App:
             if event.type == pg.KEYDOWN:
                 if event.key == pg.K_ESCAPE:
                     self.done = True
+                    for observer in self.frame_observers:
+                        observer.stop()
 
     def frameloop(self):
         ticks = pg.time.get_ticks()
